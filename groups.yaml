@@ -1,0 +1,119 @@
+default_view:
+  view: true
+  icon: mdi:home
+  entities:
+  - group.family
+  - group.locations
+WeatherView:
+  name: Weather
+  view: true
+  entities:
+  - group.weather
+  - group.wunderground_overview
+  - group.wunderground_forecast
+MediaPlayerView:
+  name: Media Players
+  view: true
+  entities:
+  - group.media_player
+CameraView:
+  name: Cameras
+  view: true
+  entities:
+  - group.locations
+ThermostatView:
+  name: Thermostat
+  view: true
+  entities:
+  - group.thermostat
+SmokeDetectorView:
+  name: Smoke Detectors
+  view: true
+  entities:
+AutomationView:
+  name: Automation
+  view: true
+  entities:
+SystemView:
+  name: System
+  view: true
+  entities:
+  - group.system
+wunderground_overview:
+  name: Weather overview
+  view: false
+  entities:
+  - sensor.pws_weather_1d
+  - sensor.pws_temp_high_record_f
+  - sensor.pws_temp_high_1d_f
+  - sensor.pws_temp_f
+  - sensor.pws_heat_index_f
+  - sensor.pws_feelslike_f
+  - sensor.pws_temp_low_1d_f
+  - sensor.pws_temp_low_record_f
+  - sensor.pws_precip_1d
+  - sensor.pws_precip_1d_in
+  - sensor.pws_wind_mph
+  - sensor.pws_wind_1d_mph
+  - sensor.pws_alerts
+wunderground_forecast:
+  name: Daily Forecast
+  view: false
+  entities:
+  - sensor.pws_weather_1d
+  - sensor.pws_weather_1n
+  - sensor.pws_weather_2d
+  - sensor.pws_weather_2n
+  - sensor.pws_weather_3d
+  - sensor.pws_weather_3n
+  - sensor.pws_weather_4d
+  - sensor.pws_weather_4n
+Thermostat:
+  name: Nest
+  view: false
+  entities:
+  - climate.dining_room_home
+  - binary_sensor.dining_room_thermostat_home_fan
+  - binary_sensor.dining_room_thermostat_home_has_leaf
+  - binary_sensor.dining_room_thermostat_home_is_locked
+  - binary_sensor.dining_room_thermostat_home_is_using_emergency_heat
+  - binary_sensor.dining_room_thermostat_home_online
+System:
+  name: System
+  view: false
+  entities:
+  - updater.updater
+  - sensor.cpu_use
+  - sensor.disk_use_
+  - sensor.ram_free
+  - sensor.received_wlan0
+  - sensor.sent_wlan0
+  - sensor.last_boot
+Family:
+  name: Family
+  view: false
+  entities:
+  - device_tracker.graham1228_iphone
+  - device_tracker.graham1228_lgg6
+Weather:
+  name: Weather
+  view: false
+  entities:
+  - sun.sun
+  - sensor.moon
+Media_Player:
+  name: Media Player
+  view: false
+  entities:
+  - media_player.amazon_fire_tv
+  - media_player.roku_yu005f960573
+  - media_player.living_room
+  - media_player.bed_room
+  - media_player.osmc_living_room
+  - media_player.samsung_smart_tv
+Locations:
+  name: Locations
+  view: false
+  entities:
+  - camera.robert
+  - camera.lindsey

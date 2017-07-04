@@ -1,0 +1,21 @@
+- name: Home
+  latitude: !secret zone_home_latitude
+  longitude: !secret zone_home_longitude
+  radius: 75
+  icon: mdi:home
+- name: Cerner CC
+  latitude: !secret zone_cernercc_latitude
+  longitude: !secret zone_cernercc_longitude
+  radius: 225
+  icon: mdi:work
+- name: Select PT Independance
+  latitude: !secret zone_select_latitude
+  longitude: !secret zone_select_longitude
+  radius: 75
+  icon: mdi:work
+- name: Cerner IC
+  latitude: !secret zone_cerneric_latitude
+  longitude: !secret zone_cerneric_longitude
+  radius: 225
+  icon: mdi:work
+

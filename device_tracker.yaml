@@ -1,0 +1,12 @@
+- platform: owntracks
+  max_gps_accuracy: 200
+  waypoints: True
+- platform: nmap_tracker
+  hosts: 192.168.1.0/24
+  home_interval: 3
+  exclude:
+    - 192.168.1.213
+
+  track_new_devices: yes
+  interval_seconds: 40
+  consider_home: 120

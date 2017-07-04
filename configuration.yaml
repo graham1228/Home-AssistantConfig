@@ -1,0 +1,59 @@
+homeassistant:
+  name: Home
+  latitude: !secret latitude
+  longitude: !secret longitude
+  elevation: 309
+  unit_system: imperial
+  time_zone: America/Chicago
+
+frontend:
+config:
+updater:
+discovery:
+conversation:
+history:
+logbook:
+sun:
+automation: !include automations.yaml
+sensor: !include sensors.yaml
+media_player: !include media_players.yaml
+mqtt: !include mqtt.yaml
+device_tracker: !include device_tracker.yaml
+zone: !include zones.yaml
+group: !include groups.yaml
+camera: !include cameras.yaml
+
+http:
+  # Uncomment this to add a password (recommended!)
+  api_password: !secret http_password
+  # Uncomment this if you are using SSL or running in Docker etc
+  base_url: grahamhouse.duckdns.org:8123
+
+
+nest:
+  client_id: !secret nest_client_id
+  client_secret: !secret nest_client_secret
+  sensors:
+    monitored_conditions:
+
+climate:
+  platform: nest
+
+# Text to speech
+tts:
+  - platform: google
+    cache: true
+    cache_dir: /tmp/tts
+    time_memory: 300
+
+wink:
+  email: graham.robert.j@gmail.com
+  password: !secret wink_password
+
+emulated_hue:
+  type: alexa
+  listen_port: 80
+
+ifttt:
+  key: !secret ifttt_key
+
