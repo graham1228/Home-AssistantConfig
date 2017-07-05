@@ -24,6 +24,12 @@ group: !include groups.yaml
 camera: !include cameras.yaml
 notify: !include notifications.yaml
 
+logger:
+  default: error
+  logs:
+    homeassistant.components.device_tracker: critical
+    homeassistant.components.camera: critical
+
 http:
   # Uncomment this to add a password (recommended!)
   api_password: !secret http_password
