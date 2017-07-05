@@ -99,6 +99,7 @@ Weather:
   name: Weather
   view: false
   entities:
+  - sensor.yr_symbol
   - sun.sun
   - sensor.moon
 Media_Player:
