@@ -22,6 +22,7 @@ device_tracker: !include device_tracker.yaml
 zone: !include zones.yaml
 group: !include groups.yaml
 camera: !include cameras.yaml
+notify: !include notifications.yaml
 
 http:
   # Uncomment this to add a password (recommended!)

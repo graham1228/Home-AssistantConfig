@@ -34,3 +34,10 @@
   - type: network_out
     arg: wlan0
   - type: last_boot
+- platform: pushbullet
+  api_key: !secret pushbullet_key
+  monitored_conditions:
+    - application_name
+    - body
+    - sender_email
+
