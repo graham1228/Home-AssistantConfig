@@ -4,3 +4,5 @@
 - platform: pushbullet
   name: pushbullet
   api_key: !secret pushbullet_key
+- platform: html5
+  name: html5
