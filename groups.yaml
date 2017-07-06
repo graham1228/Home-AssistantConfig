@@ -34,6 +34,7 @@ AutomationView:
   name: Automation
   view: true
   entities:
+  - group.automation
 SystemView:
   name: System
   view: true
@@ -119,3 +120,8 @@ Locations:
   - camera.robert
   - camera.lindsey
   - camera.locations
+Automation:
+  name: Automation
+  view: false
+  entities:
+  - automation.notify_when_lindsey_enters_home

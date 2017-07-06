@@ -1,0 +1,12 @@
+- id: Notify
+  alias: Notify when Lindsey enters home
+  trigger:
+    - platform: zone
+      entity_id: device_tracker.graham1228_iphone
+      zone: zone.home
+      event: enter
+  action:
+    - service: notify.pushbullet
+      data:
+        title: "Lindsey is at home"
+        message: "Lindsey has arrived at home."
