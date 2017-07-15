@@ -1,9 +1,9 @@
 - platform: samsungtv
-  host: 192.168.1.124
+  host: 10.0.0.20
   name: Samsung Smart TV
   mac: 0c:89:10:6f:0d:09
 - platform: kodi
-  host: 192.168.1.217
+  host: 10.0.0.9
   name: OSMC Living Room
 - platform: firetv
 - platform: cast
