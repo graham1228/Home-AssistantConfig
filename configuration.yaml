@@ -10,6 +10,8 @@ frontend:
 config:
 updater:
 discovery:
+  ignore:
+    - samsung_tv
 conversation:
 history:
 logbook:
