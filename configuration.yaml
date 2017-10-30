@@ -17,7 +17,7 @@ history:
 logbook:
 sun:
 automation: !include automations.yaml
-binary_sensor: binary_sensor.yaml
+binary_sensor: !include binary_sensor.yaml
 sensor: !include sensors.yaml
 media_player: !include media_players.yaml
 mqtt: !include mqtt.yaml
