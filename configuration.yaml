@@ -17,6 +17,7 @@ history:
 logbook:
 sun:
 automation: !include automations.yaml
+binary_sensor: binary_sensor.yaml
 sensor: !include sensors.yaml
 media_player: !include media_players.yaml
 mqtt: !include mqtt.yaml
@@ -44,6 +45,10 @@ nest:
   client_secret: !secret nest_client_secret
   sensors:
     monitored_conditions:
+
+ring:
+  username: !secret ring_username
+  password: !secret ring_password
 
 climate:
   platform: nest
