@@ -26,6 +26,11 @@ ThermostatView:
   view: true
   entities:
   - group.thermostat
+RingView:
+  name: Ring
+  view: true
+  entities:
+  - group.ring
 SmokeDetectorView:
   name: Smoke Detectors
   view: true
@@ -103,6 +108,16 @@ Weather:
   - sensor.yr_symbol
   - sun.sun
   - sensor.moon
+Ring:
+  name: Ring
+  view: false
+  entities:
+  - sensor.ring_downstairs_volume
+  - sensor.ring_front_door_battery
+  - sensor.ring_front_door_last_activity
+  - sensor.ring_front_door_last_ding
+  - sensor.ring_front_door_last_motion
+  - sensor.ring_front_door_volume
 Media_Player:
   name: Media Player
   view: false
