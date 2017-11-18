@@ -61,10 +61,6 @@ tts:
     time_memory: 300
 
 wink:
-  email: !secret wink_email
-  password: !secret wink_password
-  client_id: !secret wink_client_id
-  client_secret: !secret wink_client_secret
 
 emulated_hue:
   type: alexa
