@@ -21,6 +21,7 @@ CameraView:
   view: true
   entities:
   - group.locations
+  - group.cameras
 ArloView:
   name: Arlo
   view: true
@@ -123,7 +124,6 @@ Ring:
   - sensor.ring_front_door_last_ding
   - sensor.ring_front_door_last_motion
   - sensor.ring_front_door_volume
-  - camera.ring_front_door
 Media_Player:
   name: Media Player
   view: false
@@ -149,6 +149,11 @@ Arlo:
   - sensor.battery_level_nursery
   - sensor.captured_today_nursery
   - sensor.last_nursery
+Cameras:
+  name: Cameras
+  view: false
+  entities:
+  - camera.front_door
 Automation:
   name: Automation
   view: false
