@@ -26,6 +26,10 @@ zone: !include zones.yaml
 group: !include groups.yaml
 camera: !include cameras.yaml
 notify: !include notifications.yaml
+alarm_control_panel: !include alarm_control_panel.yaml
+
+ffmpeg:
+  ffmpeg_bin: /usr/bin/ffmpeg
 
 logger:
   default: error
@@ -68,4 +72,8 @@ emulated_hue:
 
 ifttt:
   key: !secret ifttt_key
+
+arlo:
+  username: !secret arlo_username
+  password: !secret arlo_password
 
