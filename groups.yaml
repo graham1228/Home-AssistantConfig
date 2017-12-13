@@ -21,6 +21,11 @@ CameraView:
   view: true
   entities:
   - group.locations
+ArloView:
+  name: Arlo
+  view: true
+  entities:
+  - group.arlo
 ThermostatView:
   name: Thermostat
   view: true
@@ -135,6 +140,14 @@ Locations:
   - camera.robert
   - camera.lindsey
   - camera.locations
+Arlo:
+  name: Arlo
+  view: false
+  entities:
+  - sensor.arlo_cameras
+  - sensor.battery_level_nursery
+  - sensor.captured_today_nursery
+  - sensor.last_nursery
 Automation:
   name: Automation
   view: false
