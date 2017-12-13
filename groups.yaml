@@ -123,6 +123,7 @@ Ring:
   - sensor.ring_front_door_last_ding
   - sensor.ring_front_door_last_motion
   - sensor.ring_front_door_volume
+  - camera.ring_front_door
 Media_Player:
   name: Media Player
   view: false
