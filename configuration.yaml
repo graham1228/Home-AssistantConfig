@@ -7,6 +7,7 @@ homeassistant:
   time_zone: America/Chicago
 
 frontend:
+cloud:
 config:
 updater:
 discovery:
