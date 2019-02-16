@@ -106,7 +106,7 @@ Family:
   view: false
   entities:
   - device_tracker.graham1228_iphone
-  - device_tracker.graham1228_lgg6
+  - device_tracker.graham1228_galaxy
 Weather:
   name: Weather
   view: false
