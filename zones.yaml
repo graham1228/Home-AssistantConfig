@@ -18,3 +18,8 @@
   longitude: !secret zone_cerneric_longitude
   radius: 225
   icon: mdi:briefcase
+- name: Cerner Kids Realization
+  latitude: !secret zone_cernerkidsr_latitude
+  longitude: !secret zone_cernerkidsr_longitude
+  radius: 225
+  icon: mdi:school
