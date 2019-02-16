@@ -145,13 +145,19 @@ Arlo:
   entities:
   - sensor.arlo_cameras
   - sensor.battery_level_nursery
+  - sensor.signal_strength_nursery
   - sensor.captured_today_nursery
   - sensor.last_nursery
+  - sensor.humidity_nursery
+  - sensor.air_quality_nursery
+  - sensor.temperature_nursery
+  - camera.nursery
 Cameras:
   name: Cameras
   view: false
   entities:
   - camera.front_door
+  - camera.nursery
 Automation:
   name: Automation
   view: false
