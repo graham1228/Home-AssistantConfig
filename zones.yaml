@@ -8,9 +8,9 @@
   longitude: !secret zone_cernercc_longitude
   radius: 225
   icon: mdi:briefcase
-- name: Select PT Independance
-  latitude: !secret zone_select_latitude
-  longitude: !secret zone_select_longitude
+- name: CORE Strategies PT
+  latitude: !secret zone_core_latitude
+  longitude: !secret zone_core_longitude
   radius: 75
   icon: mdi:briefcase
 - name: Cerner IC
@@ -18,4 +18,3 @@
   longitude: !secret zone_cerneric_longitude
   radius: 225
   icon: mdi:briefcase
-
