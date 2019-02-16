@@ -2,9 +2,5 @@
   host: 10.0.0.17
   name: Samsung TV
   mac: 0c:89:10:6f:0d:09
-- platform: kodi
-  host: 10.0.0.9
-  name: OSMC Living Room
 - platform: firetv
 - platform: cast
-- platform: roku
