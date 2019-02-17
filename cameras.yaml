@@ -1,14 +1,14 @@
 - platform: generic
   name: Robert
-  still_image_url: https://maps.googleapis.com/maps/api/staticmap?center={{ states.device_tracker.graham1228_galaxy.attributes.latitude }},{{ states.device_tracker.graham1228_galaxy.attributes.longitude }}&zoom=13&size=500x500&maptype=roadmap&markers=color:blue%7Clabel:P%7C{{ states.device_tracker.graham1228_galaxy.attributes.latitude }},{{ states.device_tracker.graham1228_galaxy.attributes.longitude }}&key=!secret google_api_key
+  still_image_url: https://maps.googleapis.com/maps/api/staticmap?center={{ states.device_tracker.graham1228_galaxy.attributes.latitude }},{{ states.device_tracker.graham1228_galaxy.attributes.longitude }}&zoom=13&size=500x500&maptype=roadmap&markers=color:blue%7Clabel:P%7C{{ states.device_tracker.graham1228_galaxy.attributes.latitude }},{{ states.device_tracker.graham1228_galaxy.attributes.longitude }}&key=!{{ !secret google_api_key }}
   limit_refetch_to_url_change: true
 - platform: generic
   name: Lindsey
-  still_image_url: https://maps.googleapis.com/maps/api/staticmap?center={{ states.device_tracker.graham1228_iphone.attributes.latitude }},{{ states.device_tracker.graham1228_iphone.attributes.longitude }}&zoom=13&size=500x500&maptype=roadmap&markers=color:blue%7Clabel:P%7C{{ states.device_tracker.graham1228_iphone.attributes.latitude }},{{ states.device_tracker.graham1228_iphone.attributes.longitude }}&key=!secret google_api_key
+  still_image_url: https://maps.googleapis.com/maps/api/staticmap?center={{ states.device_tracker.graham1228_iphone.attributes.latitude }},{{ states.device_tracker.graham1228_iphone.attributes.longitude }}&zoom=13&size=500x500&maptype=roadmap&markers=color:blue%7Clabel:P%7C{{ states.device_tracker.graham1228_iphone.attributes.latitude }},{{ states.device_tracker.graham1228_iphone.attributes.longitude }}&key={{ !secret google_api_key }}
   limit_refresh_to_url_change: true
 - platform: generic
   name: Locations
-  still_image_url: https://maps.googleapis.com/maps/api/staticmap?size=512x512&maptype=roadmap&markers=size:mid%7Ccolor:red%7Clabel:L%7C{{ states.device_tracker.graham1228_iphone.attributes.latitude }},{{ states.device_tracker.graham1228_iphone.attributes.longitude }}&markers=color:blue%7Clabel:R%7C{{ states.device_tracker.graham1228_galaxy.attributes.latitude }},{{ states.device_tracker.graham1228_galaxy.attributes.longitude }}&key=!secret google_api_key
+  still_image_url: https://maps.googleapis.com/maps/api/staticmap?size=512x512&maptype=roadmap&markers=size:mid%7Ccolor:red%7Clabel:L%7C{{ states.device_tracker.graham1228_iphone.attributes.latitude }},{{ states.device_tracker.graham1228_iphone.attributes.longitude }}&markers=color:blue%7Clabel:R%7C{{ states.device_tracker.graham1228_galaxy.attributes.latitude }},{{ states.device_tracker.graham1228_galaxy.attributes.longitude }}&key={{ !secret google_api_key }}
   limit_refresh_to_url_change: true
 - platform: arlo
   ffmpeg_arguments: '-pred 1 -q:v 2'
