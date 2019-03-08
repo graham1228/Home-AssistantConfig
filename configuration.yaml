@@ -87,3 +87,7 @@ august:
 neato:
   username: !secret neato_username
   password: !secret neato_password
+
+weather:
+  - platform: darksky
+    api_key: !secret darksky_api_key
