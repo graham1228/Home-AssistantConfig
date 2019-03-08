@@ -10,7 +10,6 @@ frontend:
 cloud:
 config:
 updater:
-system_health:
 discovery:
   ignore:
     - samsung_tv
