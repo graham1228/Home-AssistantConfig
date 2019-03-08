@@ -79,7 +79,7 @@ arlo:
   password: !secret arlo_password
 
 august:
-  login_method: email
+  login_method: phone
   username: !secret august_username
   password: !secret august_password
 
