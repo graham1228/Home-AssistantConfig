@@ -28,3 +28,15 @@
     - temperature
     - humidity
     - air_quality
+- platform: darksky
+  api_key: !secret darksky_api_key
+  forecast:
+    - 0
+  monitored_conditions:
+    - summary
+    - icon
+    - temperature
+    - temperature_low
+    - temperature_high
+    - daily_summary
+    - hourly_summary

@@ -17,11 +17,12 @@ conversation:
 history:
 logbook:
 sun:
+system_health:
+map:
 automation: !include automations.yaml
 binary_sensor: !include binary_sensor.yaml
 sensor: !include sensors.yaml
 media_player: !include media_players.yaml
-mqtt: !include mqtt.yaml
 device_tracker: !include device_tracker.yaml
 zone: !include zones.yaml
 group: !include groups.yaml
@@ -42,7 +43,11 @@ http:
   # Uncomment this to add a password (recommended!)
   api_password: !secret http_password
   # Uncomment this if you are using SSL or running in Docker etc
-  base_url: grahamhouse.duckdns.org:8123
+  base_url: !secret http_base_url
+  use_x_forwarded_for: true
+  # You must set the trusted proxy IP address so that Home Assistant will properly accept connections
+  # Set this to your NGINX machine IP, or localhost if hosted on the same machine.
+  trusted_proxies: 10.0.0.5 
 
 
 nest:
@@ -65,7 +70,7 @@ tts:
     cache_dir: /tmp/tts
     time_memory: 300
 
-wink:
+#wink:
 
 emulated_hue:
   type: alexa
@@ -79,7 +84,7 @@ arlo:
   password: !secret arlo_password
 
 august:
-  login_method: phone
+  login_method: email
   username: !secret august_username
   password: !secret august_password
 

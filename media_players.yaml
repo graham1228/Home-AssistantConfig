@@ -2,10 +2,10 @@
   host: 10.0.0.17
   name: Samsung TV
   mac: 0c:89:10:6f:0d:09
-- platform: firetv
-  name: Fire TV LivingRoom
-  host: 10.0.0.15
-- platform: firetv
-  name: Fire TV Bedroom
-  host: 10.0.0.18
+#- platform: firetv
+#  name: Fire TV LivingRoom
+#  host: 10.0.0.15
+#- platform: firetv
+#  name: Fire TV Bedroom
+#  host: 10.0.0.18
 - platform: cast
